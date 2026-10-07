@@ -4,7 +4,7 @@
 
 <br>
 
-# 🗄️ **Universidad Nacional de Loja**
+#  **Universidad Nacional de Loja**
 
 ### *Carrera de Computación · Tercer Ciclo*
 
@@ -12,7 +12,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=transparent&fontColor=7F5AF0&fontSize=42&height=80&text=ESTRUCTURA%20DE%20DATOS&fontAlignY=55" alt="Base de Datos" />
 
-### 💻 *Portafolio Digital de Aprendizaje*
+###  *Portafolio Digital de Aprendizaje*
 
 <br><br>
 
