@@ -21,8 +21,15 @@
 
 <br>
 
-### 👩‍🎓 **Estudiante**
+###  **Grupo 10**
+
+<br>
+
+### 👩‍🎓 **Estudiantes:**
 ### *Kiara Salomé Condoy Morocho*
+### *Hector Leonardo Guerrero Espinoza*
+### *Mateo Sebastian Pucha Carrera*
+### *Ariana Arlette Quezada Fernandez*
 
 <br>
 
