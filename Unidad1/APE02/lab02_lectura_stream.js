@@ -20,3 +20,12 @@ readableStream.on('end', () => {
     console.log(`[Lectura por Stream] Tiempo de I/O parcializado: ${((end - start) / 1000).toFixed(2)} segundos.`);
     console.log(`[Lectura por Stream] Consumo Neto de RAM: ${((memoryAfter - memoryBefore) / 1024 / 1024).toFixed(2)} MB`);
 });
+// [AHORRO DE CICLOS DEL GARBAGE COLLECTOR]
+    // Aquí solo se mantiene UN chunk/línea en memoria a la vez.
+    // Al terminar esta iteración, la variable 'chunk' queda sin referencias
+    // y el GC puede liberarla en el siguiente barrido sin esfuerzo.
+    // A diferencia de readFileSync (que retiene el millón de cadenas
+    // simultáneamente), aquí nunca hay más de un objeto vivo por ciclo,
+    // por lo que el recolector trabaja con objetos aislados y ligeros,
+    // reduciendo la frecuencia y el costo de sus pausas (stop-the-world).
+    
