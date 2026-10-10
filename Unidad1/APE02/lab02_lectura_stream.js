@@ -10,6 +10,16 @@ const readableStream = fs.createReadStream(FILE_NAME, { encoding: 'utf-8' });
 readableStream.on('data', (chunk) => {
     // Procesamos el chunk de datos actual sin almacenarlo completo
     // Contamos cuántos saltos de línea hay en este fragmento
+
+        // [AHORRO DE CICLOS DEL GARBAGE COLLECTOR]
+    // Aquí solo se mantiene UN chunk/línea en memoria a la vez.
+    // Al terminar esta iteración, la variable 'chunk' queda sin referencias
+    // y el GC puede liberarla en el siguiente barrido sin esfuerzo.
+    // A diferencia de readFileSync (que retiene el millón de cadenas
+    // simultáneamente), aquí nunca hay más de un objeto vivo por ciclo,
+    // por lo que el recolector trabaja con objetos aislados y ligeros,
+    // reduciendo la frecuencia y el costo de sus pausas (stop-the-world).
+    
     let lineBreakCount = (chunk.match(/\n/g) || []).length;
     totalRegistros += lineBreakCount;
 });
