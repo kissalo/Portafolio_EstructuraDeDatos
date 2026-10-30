@@ -1,0 +1,21 @@
+{
+  "biblioteca": "Biblioteca UNL",
+  "categorias": {
+    "Programación": [
+      { "id": 1, "titulo": "Clean Code", "autor": "Robert C. Martin", "anio": 2008 },
+      { "id": 2, "titulo": "Estructuras de Datos y Algoritmos en JavaScript", "autor": "Loiane Groner", "anio": 2018 },
+      { "id": 3, "titulo": "Eloquent JavaScript", "autor": "Marijn Haverbeke", "anio": 2018 },
+      { "id": 4, "titulo": "Jakarta EE en la Práctica", "autor": "Varios", "anio": 2021 }
+    ],
+    "Estadística": [
+      { "id": 5, "titulo": "Estadística para Administración y Economía", "autor": "Anderson", "anio": 2016 },
+      { "id": 6, "titulo": "Probabilidad y Estadística", "autor": "Walpole", "anio": 2012 },
+      { "id": 7, "titulo": "Introducción a la Estadística con R", "autor": "Dalgaard", "anio": 2008 }
+    ],
+    "Emprendimiento": [
+      { "id": 8, "titulo": "El Método Lean Startup", "autor": "Eric Ries", "anio": 2011 },
+      { "id": 9, "titulo": "De Cero a Uno", "autor": "Peter Thiel", "anio": 2014 },
+      { "id": 10, "titulo": "Generación de Modelos de Negocio", "autor": "Osterwalder", "anio": 2010 }
+    ]
+  }
+}
